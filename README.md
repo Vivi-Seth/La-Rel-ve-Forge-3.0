@@ -238,7 +238,7 @@ claude --resume <新ID>
 | `--dry-run` | 预演。只打印切点和保留量，不写任何文件 |
 | `--squash-tools [chars]` | 把超长工具输出降采样（默认上限 16000 chars/块）。对话原文一字不动 |
 | `--inject file.md` | 把**已组装好**的注入包作为新 session 的第一条消息 |
-| `--skip-markers "a,b"` | 追加切点黑名单：含这些标记的"伪 user 消息"不会被选为切点 |
+| `--skip-markers "a,b"` | 追加切点黑名单：某一行以这些标记开头（容前置空白）的"伪 user 消息"不会被选为切点 |
 | `--projects-dir DIR` | 指定 CC 的 projects 子目录（默认自动探测最近活动的那个） |
 
 3.0 的协议与设计（注入包格式、四个开关的语义、两条路、三段制）：[docs/DESIGN.md](docs/DESIGN.md)
